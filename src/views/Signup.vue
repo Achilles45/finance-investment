@@ -17,7 +17,7 @@
                <div class="form-group">
                       <small id="passwordHelpBlock" class="form-text text-muted">Select your account type</small>
                   <select class="form-control" id="inlineFormCustomSelect" v-model="account_type">
-                            <option value="10,000">&#8358;10,000 to &#8358;15,000</option>
+                            <!-- <option value="10,000">&#8358;10,000 to &#8358;15,000</option> -->
                             <option value="20,000">&#8358;20,000 to &#8358;30,000</option>
                             <option value="30,000">&#8358;30,000 to &#8358;45,000</option>
                             <option value="40,000">&#8358;40,000 to &#8358;60,000</option>
@@ -34,7 +34,7 @@
                             <option value="600,000">&#8358;600,000 to &#8358;900,000</option> 
                             <option value="700,000">&#8358;700,000 to &#8358;1,000,050</option> 
                             <option value="800,000">&#8358;800,000 to &#8358;1,200,000</option> 
-                             <option value="50,000">&#8358;50,000 to &#8358;150,000 (Promo plan)</option>
+                             <!-- <option value="100,000">&#8358;50,000 to &#8358;150,000 (Promo plan)</option> -->
                              <option value="100,000">&#8358;100,000 to &#8358;300,000 (Promo plan)</option>
                             <option value="200,000">&#8358;200,000 to &#8358;600,000 (Promo plan)</option>
                             <option value="300,000">&#8358;300,000 to &#8358;900,000 (Promo plan)</option>
