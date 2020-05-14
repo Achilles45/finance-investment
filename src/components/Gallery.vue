@@ -10,23 +10,23 @@
           <div class="gallery__wrapper">
               <div class="gallery__card">
                   <div class="overlay"></div>
-                  <img src="../assets/images/img2.jpeg" class="img-fluid" alt="">
+                  <img src="../assets/images/oil1.jpg" class="img-fluid" alt="">
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>
-                  <img src="../assets/images/gal-2.jpeg" class="img-fluid" alt="">
+                  <img src="../assets/images/farm1.png" class="img-fluid" alt="">
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>
-                  <img src="../assets/images/img1.jpeg" class="img-fluid" alt="">
+                  <img src="../assets/images/oil2.jpg" class="img-fluid" alt="">
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>
-                  <img src="../assets/images/img5.jpeg" class="img-fluid" alt="">
+                  <img src="../assets/images/oil3.jpg" class="img-fluid" alt="">
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>
-                  <img src="../assets/images/gal-4.jpeg" class="img-fluid" alt="">
+                  <img src="../assets/images/bitcoin.png" class="img-fluid" alt="">
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>

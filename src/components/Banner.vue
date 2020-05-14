@@ -4,7 +4,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="carousel-overlay"></div>
-          <img class="carousel-img" src="../assets/images/home1.jpg" alt="First slide" />
+          <img class="carousel-img" src="../assets/images/banner8.jpg" alt="First slide" />
           <div class="carousel-caption">
             <h1 class="animated bounceIn">YOUR BEST PARTNER TO HELP YOU CREATE WEALTH!</h1>
             <p>Grow your investment by as much as 50% in 4 days when you create a free account today</p>
@@ -63,7 +63,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    // background: rgba(4,9,30,.92);
+    background: rgba(4,9,30,.7);
   }
   .carousel-img {
     width: auto;
@@ -98,7 +98,7 @@ export default {
       letter-spacing: 1px;
       font-size: .9rem;
       padding-bottom: 2rem;
-      opacity: 0.7;
+      opacity: 0.8;
     }
     .fa-long-arrow-alt-right{
       margin-left: 0rem;
