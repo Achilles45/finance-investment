@@ -129,7 +129,7 @@ export default {
         logOut:function(){
            firebase.auth().signOut()
            .then(()=>{
-               this.$router.push({name: 'Signin'})
+               this.$router.push({name: 'Index'})
            })
         },
     },

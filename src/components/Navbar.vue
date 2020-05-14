@@ -85,7 +85,7 @@ export default {
                 font-size: .8rem;
             }
             .login{
-                // border: 1px solid $secondary-color;
+                border: 1px solid $secondary-color;
                 padding: .9rem 2rem;
                 border-radius: 4px;
                 background: $secondary-color;

@@ -30,7 +30,7 @@
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>
-                  <img src="../assets/images/gal-5.jpeg" class="img-fluid" alt="">
+                  <img src="../assets/images/export.jpg" class="img-fluid" alt="">
               </div>
                <div class="gallery__card">
                   <div class="overlay"></div>
