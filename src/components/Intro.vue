@@ -8,7 +8,7 @@
           <div class="col-md-6">
               <h2>Who We Are</h2>
               <hr>
-              <p>Finance Investment Company is created for sustainability and logevity because we know how best to trade with your money. We are not here just for few days like others who come promising heaven and vanish out in no time. Those who are sincere and real will see the good intentions behind the policy module. Take it one at a time to prolong enjoyment as is the best option than eating  one day in short time.</p>
+              <p>Financial Investment Company is created for sustainability and logevity because we know how best to trade with your money. We are not here just for few days like others who come promising heaven and vanish out in no time. Those who are sincere and real will see the good intentions behind the policy module. Take it one at a time to prolong enjoyment as is the best option than eating  one day in short time.</p>
               <router-link to="/signup" class="intro__btn">Get Started</router-link>
           </div>
       </div>

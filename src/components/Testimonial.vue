@@ -17,7 +17,7 @@
 	<div class="carousel-inner">		
 		<div class="item carousel-item active">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Wawo, i just got my money..Finance Investment is real, l have never seen a platform that this easy to pay, easy to receive,and easy to be confirmed..God bless you guys, l love you all and may God keep strengthen to this..Thank you so much..</p>
+			<p class="testimonial">Wawo, i just got my money..Financail Investment is real, l have never seen a platform that this easy to pay, easy to receive,and easy to be confirmed..God bless you guys, l love you all and may God keep strengthen to this..Thank you so much..</p>
 			<p class="overview"><b>Owoh, Ann Echeleme</b>Investor</p>
 			<div class="star-rating">
 				<ul class="list-inline">
@@ -31,7 +31,7 @@
 		</div>
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Thank you Finance Investment.. Am so happy to be part of this platform</p>
+			<p class="testimonial">Thank you Financial Investment.. Am so happy to be part of this platform</p>
 			<p class="overview"><b> Abajingin Ayokanmi D</b>Investor</p>
 			<div class="star-rating">
 				<ul class="list-inline">
@@ -45,7 +45,7 @@
 		</div>
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Finance investment is real my brother.. Come and joined the winning team</p>
+			<p class="testimonial">Financial investment is real my brother.. Come and joined the winning team</p>
 			<p class="overview"><b>Braimah Sanusi Elabor</b>Investor</p>
 			<div class="star-rating">
 				<ul class="list-inline">
@@ -59,7 +59,7 @@
 		</div>	
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Finance investment has done it again, alert keeps on entering, thanks to the day I joined this great platform, it keeps making me smiling every now and then, thanks Diamond Investment</p>
+			<p class="testimonial">Financial investment has done it again, alert keeps on entering, thanks to the day I joined this great platform, it keeps making me smiling every now and then, thanks Financial Investment</p>
 			<p class="overview"><b>Iheanyichukwu Uchegbu</b>Investor</p>
 			<div class="star-rating">
 				<ul class="list-inline">
@@ -87,7 +87,7 @@
 		</div>		
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Finance investment is a trusted investment site, if you don't join now, you will join later.</p>
+			<p class="testimonial">Financial investment is a trusted investment site, if you don't join now, you will join later.</p>
 			<p class="overview"><b>Ahmed Abdulquadir</b>Investor</p>
 			<div class="star-rating">
 				<ul class="list-inline">

@@ -17,7 +17,6 @@
                <div class="form-group">
                       <small id="passwordHelpBlock" class="form-text text-muted">Select your account type</small>
                   <select class="form-control" id="inlineFormCustomSelect" v-model="account_type">
-                            <option selected>Select Investment Plan</option>
                             <option value="10,000">&#8358;10,000 to &#8358;15,000</option>
                             <option value="20,000">&#8358;20,000 to &#8358;30,000</option>
                             <option value="30,000">&#8358;30,000 to &#8358;45,000</option>
@@ -51,27 +50,27 @@
                     <small id="passwordHelpBlock" class="form-text text-muted">Select your Bank</small>
                    <select class="form-control " id="bank" v-model="user_bank">
 <option selected>Choose</option>
-<option value="access">Access Bank</option>
-          <option value="citibank">Citibank</option>
-          <option value="diamond">Diamond Bank</option>
-          <option value="ecobank">Ecobank</option>
-          <option value="fidelity">Fidelity Bank</option>
-          <option value="firstbank">First Bank</option>
-          <option value="fcmb">First City Monument Bank (FCMB)</option>
-          <option value="gtb">Guaranty Trust Bank (GTB)</option>
-          <option value="heritage">Heritage Bank</option>
-          <option value="keystone">Keystone Bank</option>
-          <option value="polaris">Polaris Bank</option>
-          <option value="providus">Providus Bank</option>
-          <option value="stanbic">Stanbic IBTC Bank</option>
-          <option value="standard">Standard Chartered Bank</option>
-          <option value="sterling">Sterling Bank</option>
-          <option value="suntrust">Suntrust Bank</option>
-          <option value="union">Union Bank</option>
-          <option value="uba">United Bank for Africa (UBA)</option>
-          <option value="unity">Unity Bank</option>
-          <option value="wema">Wema Bank</option>
-          <option value="zenith">Zenith Bank</option>
+<option value="Access">Access Bank</option>
+          <option value="Citibank">Citibank</option>
+          <option value="Diamond">Diamond Bank</option>
+          <option value="Ecobank">Ecobank</option>
+          <option value="Fidelity">Fidelity Bank</option>
+          <option value="Firstbank">First Bank</option>
+          <option value="Fcmb">First City Monument Bank (FCMB)</option>
+          <option value="Gtb">Guaranty Trust Bank (GTB)</option>
+          <option value="Heritage">Heritage Bank</option>
+          <option value="Keystone">Keystone Bank</option>
+          <option value="Polaris">Polaris Bank</option>
+          <option value="Providus">Providus Bank</option>
+          <option value="Stanbic">Stanbic IBTC Bank</option>
+          <option value="Standard">Standard Chartered Bank</option>
+          <option value="Sterling">Sterling Bank</option>
+          <option value="Suntrust">Suntrust Bank</option>
+          <option value="Union">Union Bank</option>
+          <option value="Uba">United Bank for Africa (UBA)</option>
+          <option value="Unity">Unity Bank</option>
+          <option value="Wema">Wema Bank</option>
+          <option value="Zenith">Zenith Bank</option>
 </select>
                </div>
                <div class="form-group">

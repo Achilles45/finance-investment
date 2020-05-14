@@ -4,7 +4,10 @@ import Index from '../views/Index.vue'
 import Contact from '../views/Contact.vue'
 import Signup from '../views/Signup.vue'
 import Signin from '../views/Signin.vue'
-
+import Dashboard from '../views/Dashboard.vue'
+import Profile from '../views/Profile.vue'
+import Withdrawal from '../views/Withdrawal.vue'
+import Payment from '../views/Payment.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -27,19 +30,40 @@ Vue.use(VueRouter)
     component: Contact
   },
   {
-    path: '/',
-    name: 'Index',
-    component: Index
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
   },
   {
-    path: '/',
-    name: 'Index',
-    component: Index
+    path: '/signin',
+    name: 'Signin',
+    component: Signin
+  },
+  {
+    path: '/dashboard/overview',
+    name: 'dashboard',
+    component: Dashboard
+  },
+  {
+    path: '/dashboard/profile',
+    name: 'Profile',
+    component: Profile
+  },
+  {
+    path: '/dashboard/withdrawal',
+    name: 'Withdrawal',
+    component: Withdrawal
+  },
+  {
+    path: '/dashboard/payment',
+    name: 'Payment',
+    component: Payment
   },
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 export default router

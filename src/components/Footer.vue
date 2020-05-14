@@ -5,7 +5,7 @@
           <div class="row">
               <div class="col-md-4">
                   <h5>Company</h5>
-                  <p class="intro">Finance Investment Company was created to help and  support it's registered members financially and also to help increase economic growth in the  society as well. Our intentions are genuie and pure.</p>
+                  <p class="intro">Financial Investment Company was created to help and  support it's registered members financially and also to help increase economic growth in the  society as well. Our intentions are genuie and pure.</p>
               </div>
                <div class="col-md-4">
                   <h5>Our Location & Contact</h5>
@@ -14,7 +14,7 @@
                  <h6>Email Address</h6>
                 <p>financeinvestment@gmail.com</p>
                  <h6>Phone</h6>
-                <p><a href="tel:09054205697">09054205697</a></p>
+                <p><a href="tel:07037500853">07037500853</a></p>
               </div>
               <div class="col-md-4">
                   <h5>Payment Method</h5>
@@ -29,7 +29,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-12">
-                      <p>Diamond Investment Company &copy; All Right Reserved, 2020</p>
+                      <p>Financial Investment Company &copy; All Right Reserved, 2020</p>
                   </div>
               </div>
           </div>
