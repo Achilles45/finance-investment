@@ -109,7 +109,7 @@ export default {
     }
     .carousel-btn {
       color: #fff;
-      background: $primary-color;
+      background: $secondary-color;
       padding: 1.3rem 3.5rem;
       text-align: center;
       font-size: .8rem;
