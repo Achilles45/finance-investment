@@ -82,7 +82,7 @@
               </div>
               <hr>
               <div></div>
-              <p>After making paymen, please send a message to to customer care using the live chat or email to info@diamondinvestment.ltd so your payment can be immediately approved.</p>
+              <p>After making payment, please send a message to our customer care using the live chat or email to financialinvestment943@gmail.com so your payment can be immediately approved.</p>
               </div>
             <!--End of Dashboard
             =========================-->
