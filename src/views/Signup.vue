@@ -59,6 +59,7 @@
           <option value="Fcmb">First City Monument Bank (FCMB)</option>
           <option value="Gtb">Guaranty Trust Bank (GTB)</option>
           <option value="Heritage">Heritage Bank</option>
+          <option value="Jaiz">Jaiz Bank</option>
           <option value="Keystone">Keystone Bank</option>
           <option value="Polaris">Polaris Bank</option>
           <option value="Providus">Providus Bank</option>
