@@ -10,7 +10,7 @@
                <div class="col-md-4">
                   <h5>Our Location & Contact</h5>
                 <h6>Head Office</h6>
-                <p>No 22 Obiopko L.G.A GRA Phase 5 Off Josh Avenue Close to Hankies Hills Eatery Nasarawa State.</p>
+                <p>No 41 Udi Hill Street, Off Aso Drive, Maitama, Abuja, Nigeria.</p>
                  <h6>Email Address</h6>
                 <p>financeinvestment@gmail.com</p>
                  <h6>Phone</h6>
