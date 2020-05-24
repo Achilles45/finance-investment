@@ -35,16 +35,20 @@
                             <option value="700,000">&#8358;700,000 to &#8358;1,050,000</option> 
                             <option value="800,000">&#8358;800,000 to &#8358;1,200,000</option> 
                              <!-- <option value="100,000">&#8358;50,000 to &#8358;150,000 (Promo plan)</option> -->
-                            
-                             <option value="100,000" class="pt-4">&#8358;100,000 to &#8358;300,000 (Promo plan)</option>
-                            <option value="200,000">&#8358;200,000 to &#8358;600,000 (Promo plan)</option>
-                            <option value="300,000">&#8358;300,000 to &#8358;900,000 (Promo plan)</option>
-                            <option value="500,000">&#8358;500,000 to &#8358;1,500,000 (Promo plan)</option>
-                            <option value="600,000">&#8358;600,000 to &#8358;1,800,000 (Promo plan)</option>
-                            <option value="700,000">&#8358;700,000 to &#8358;2,100,000 (Promo plan)</option>
-                            <option value="800,000">&#8358;800,000 to &#8358;2,400,000 (Promo plan)</option>
-                            <option value="900,000">&#8358;900,000 to &#8358;2,700,000 (Promo plan)</option>
-                            <option value="1,000,000">&#8358;1,000,000 to &#8358;3,000,000 (Promo plan)</option>
+                            <option value="50,000" class="pt-4">&#8358;50,000 to &#8358;125,000 (Promo plan)</option>
+                             <option value="100,000" class="pt-4">&#8358;100,000 to &#8358;250,000 (Promo plan)</option>
+                            <option value="200,000">&#8358;200,000 to &#8358;450,000 (Promo plan)</option>
+                            <option value="250,000">&#8358;250,000 to &#8358;450,000 (Promo plan)</option>
+                            <option value="300,000">&#8358;300,000 to &#8358;650,000 (Promo plan)</option>
+                            <option value="350,000">&#8358;350,000 to &#8358;700,000 (Promo plan)</option>
+                            <option value="400,000">&#8358;400,000 to &#8358;850,000 (Promo plan)</option>
+                            <option value="450,000">&#8358;450,000 to &#8358;950,000 (Promo plan)</option>
+                            <option value="500,000">&#8358;500,000 to &#8358;1,200,000 (Promo plan)</option>
+                            <option value="600,000">&#8358;600,000 to &#8358;1,350,000 (Promo plan)</option>
+                            <option value="700,000">&#8358;700,000 to &#8358;1,500,000 (Promo plan)</option>
+                            <option value="800,000">&#8358;800,000 to &#8358;1,750,000 (Promo plan)</option>
+                            <option value="900,000">&#8358;900,000 to &#8358;1,850,000 (Promo plan)</option>
+                            <option value="1,000,000">&#8358;1,000,000 to &#8358;2,000,000 (Promo plan)</option>
                          </select>
                </div>
                <div class="form-group">
