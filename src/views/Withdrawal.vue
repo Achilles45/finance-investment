@@ -34,7 +34,7 @@
               <div id="dashboard">
              <small>You can now make request to make withdrawal into your local bank when your investment has reached maturity</small>
              <hr>
-              <div v-if="err" class="error">
+              <div v-if="verifyuser == 'false'" class="red">
                   You account is yet to be verified. Call <a href="tel:07037500853">07037500853</a> if you have any issue making withdrawals
               </div>
                <div class="row">
