@@ -68,7 +68,7 @@
                          <p>Your capital and returns would be paid back after a minimum of 4 days after your payment has been confirmed.</p>
                      </div>
                   </div> -->
-                  <div class="summary__card four pt-4">
+                  <!-- <div class="summary__card four pt-4">
                      <i class="fa fa-home"></i>
                      <div class="content pl-2">
                          <h6>Bank Name: {{ bank_name}}</h6>
@@ -76,7 +76,7 @@
                          <h6>Account Number:  {{ account_number }}</h6>
                          <h6>Account Name:  {{ account_name }}</h6>
                      </div>
-                  </div>
+                  </div> -->
               </div>
               </div>
               <hr>
