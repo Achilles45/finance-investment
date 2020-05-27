@@ -55,10 +55,10 @@
                      <!-- <i class="fa fa-home"></i> -->
                      <div class="content pl-4">
                          <!-- <h6>Bank Accounts</h6> -->
-                         <h6>Bank Name: Zenith Bank PLC</h6>
+                        <h6>Bank Name: {{ bank_name}}</h6>
                          <hr>
-                         <h6>Account Number: 2282624592</h6>
-                         <h6>Account Name: Afor Joshua Jacob</h6>
+                         <h6>Account Number:  {{ account_number }}</h6>
+                         <h6>Account Name:  {{ account_name }}</h6>
                      </div>
                   </div>
                     <!-- <div class="summary__card three pt-4">
