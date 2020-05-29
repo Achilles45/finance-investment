@@ -43,7 +43,7 @@
                             <option value="350,000">&#8358;350,000 to &#8358;700,000 (Promo plan)</option>
                             <option value="400,000">&#8358;400,000 to &#8358;850,000 (Promo plan)</option>
                             <option value="450,000">&#8358;450,000 to &#8358;950,000 (Promo plan)</option>
-                            <option value="500,000">&#8358;500,000 to &#8358;1,200,000 (Promo plan)</option>
+                            <option value="500,000">&#8358;500,000 to &#8358;1,000,000 (Promo plan)</option>
                             <option value="600,000">&#8358;600,000 to &#8358;1,350,000 (Promo plan)</option>
                             <option value="700,000">&#8358;700,000 to &#8358;1,500,000 (Promo plan)</option>
                             <option value="800,000">&#8358;800,000 to &#8358;1,750,000 (Promo plan)</option>
