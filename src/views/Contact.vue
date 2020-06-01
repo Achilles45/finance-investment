@@ -16,7 +16,7 @@
               <hr><br>
               <div class="box1 d-flex">
                 <i class="fa fa-phone"></i>
-                <p>07037500853</p>
+                <p>09011496134</p>
               </div>
                <div class="box2 d-flex">
                 <i class="fa fa-envelope"></i>
