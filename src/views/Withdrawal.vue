@@ -35,7 +35,7 @@
              <small>You can now make request to make withdrawal into your local bank when your investment has reached maturity</small>
              <hr>
               <div v-if="verifyuser == 'false'" class="red">
-                  You account is yet to be verified. Call <a href="tel:09011496134">09011496134</a> if you have any issue making withdrawals
+                  You account is yet to be verified. Call <a href="tel:07046400956">07046400956</a> if you have any issue making withdrawals
               </div>
                <div class="row">
                    <div class="col-md-8">
