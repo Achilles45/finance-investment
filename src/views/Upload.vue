@@ -13,8 +13,8 @@
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
                 <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
                  <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr>
                  <li><router-link to="/dashboard/upload"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Upload Payment</router-link></li><hr>  
-                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
@@ -33,9 +33,10 @@
               <div class="right__wrapper">
                   <div class="heading d-flex justify-content-between">
                   <div class="content">
-                   <!-- <h5>Welcome Back!</h5> -->
-                    <h5>Make Payment</h5>
-                         <h4>{{ name }}</h4>
+                   <h5>Welcome Back!</h5>
+                      <h4>{{ name }}</h4>
+                      <!-- <small>{{ firstCode }}</small> -->
+                  <!-- <small>{{ accountNumber }}</small> -->
                   </div>
                     <div @click.prevent="show()" class="navbar__toggler">
                       <i class="fa fa-bars"></i>
@@ -43,46 +44,30 @@
                   <hr>
               </div>
               <div id="dashboard">
-             <small>You can make your deposit with any of the following methods immediately.</small>
+             <small>This is a summary of your activities on this platform</small>
              <hr>
-               <div>
+              <div>
                   <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22title%22%3A%22EUR%2FUSD%22%2C%22proName%22%3A%22FX_IDC%3AEURUSD%22%7D%2C%7B%22description%22%3A%22GBP%2FUSD%22%2C%22proName%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22NZD%2FUSD%22%2C%22proName%22%3A%22FX%3ANZDUSD%22%7D%2C%7B%22description%22%3A%22AUD%2FUSD%22%2C%22proName%22%3A%22FX%3AAUDUSD%22%7D%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A72%2C%22utm_source%22%3A%22cryptomorefx.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: 72px; width: 100%;"></iframe>
               </div>
               <div v-if="verifyuser == 'false'" class="red">
-                  Your account is yet to be verified. Kindly make your payments to the account below or call <a href="tel:07046400956">07046400956</a>
+                  Your account has not been verified. Please make your payment for verification or call <a href="tel:08094986971">08094986971</a>
               </div>
-                  <div class="summary__wrapper">
-                  <div class="summary__card two pt-4">
-                     <!-- <i class="fa fa-home"></i> -->
-                     <div class="content pl-4">
-                         <!-- <h6>Bank Accounts</h6> -->
-                        <h6>Bank Name: {{ bank_name}}</h6>
-                         <hr>
-                         <h6>Account Number:  {{ account_number }}</h6>
-                         <h6>Account Name:  {{ account_name }}</h6>
-                     </div>
-                  </div>
-                    <!-- <div class="summary__card three pt-4">
-                     <i class="fa fa-cubes"></i>
-                     <div class="content pl-4">
-                         <h6>Invetment Lifecycle</h6>
-                         <p>Your capital and returns would be paid back after a minimum of 4 days after your payment has been confirmed.</p>
-                     </div>
-                  </div> -->
-                  <!-- <div class="summary__card four pt-4">
-                     <i class="fa fa-home"></i>
-                     <div class="content pl-2">
-                         <h6>Bank Name: {{ bank_name}}</h6>
-                         <hr>
-                         <h6>Account Number:  {{ account_number }}</h6>
-                         <h6>Account Name:  {{ account_name }}</h6>
-                     </div>
-                  </div> -->
-              </div>
+                        <div >
+                        <p>Upload Your Proof of Payment:</p>
+                        <input type="file" @change="previewImage" accept="image/*" >
+                        </div>
+                        <div>
+                        <p>Progress: {{uploadValue.toFixed()+"%"}}
+                        <progress id="progress" :value="uploadValue" max="100" ></progress>  </p>
+                        </div>
+                        <div v-if="imageData!=null">
+                            <img class="preview" :src="picture">
+                            <br>
+                        <button @click="onUpload" class="upload__btn">Upload Proof</button>
+                        </div>
               </div>
               <hr>
-              <div></div>
-              <p>After making payment, please send a message to our customer care using the live chat or email to financialinvestment943@gmail.com so your payment can be immediately approved.</p>
+              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 50% of your investment and your capital would be paid back in a week. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
             <!--End of Dashboard
             =========================-->
@@ -99,21 +84,41 @@ export default {
         return{
             email:null,
             name:null,
-            plan:null,
+            account_type:null,
             id:null,
-            bank_name: null,
-            account_number:null,
-            account_name:null,
-            wallet_address:null
+            available_balance:null,
+            verifyuser:null,
+            imageData:null,
+            picture:null,
+            uploadValue: 0
         }
     },
     computed:{
-        investmentReturns(){
-            return this.plan * 0.15
+        available(){
+            return this.available_balance * 0.6
         }
     },
      methods:{
-          show:function(){
+        previewImage(event) {
+      this.uploadValue=0;
+      this.picture=null;
+      this.imageData = event.target.files[0];
+    },
+
+    onUpload(){
+      this.picture=null;
+      const storageRef=firebase.storage().ref(`${this.imageData.name}`).put(this.imageData);
+      storageRef.on(`state_changed`,snapshot=>{
+        this.uploadValue = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+      }, error=>{console.log(error.message)},
+      ()=>{this.uploadValue=100;
+        storageRef.snapshot.ref.getDownloadURL().then((url)=>{
+        //   this.picture =url;
+        });
+      }
+      );
+    },
+    show:function(){
             const navLeft = document.querySelector('#dashboard__left')
             navLeft.classList.toggle('navLeft')
         },
@@ -130,7 +135,7 @@ export default {
         logOut:function(){
            firebase.auth().signOut()
            .then(()=>{
-               this.$router.push({name: 'Index'})
+               this.$router.push({name: 'Signin'})
            })
         },
     },
@@ -143,12 +148,10 @@ export default {
             snapshot.forEach((doc) =>{
                 this.name = doc.data().name,
                 this.email = doc.data().email,
-                this.plan = doc.data().plan,
+                this.available_balance = doc.data().available_balance,
+                this.account_type = doc.data().account_type,
+                this.verifyuser = doc.data().verifyuser
                 this.id = doc.data().user_id
-                this.bank_name = doc.data().bank_name
-                this.account_number = doc.data().account_number
-                this.account_name = doc.data().account_name
-                this.wallet_address = doc.data().wallet_address
             })
         })
     }
@@ -156,6 +159,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
+.upload__btn{
+    background: #000;
+    border:none;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    font-size: .8rem;
+}
 .dashboard{
     width: 100vw;
     .dashboard__wrapper{
@@ -169,18 +180,17 @@ export default {
         height: 100% !important;
         small{
             opacity: .6;
-            font-size: .75rem;
+            font-size: .7rem;
         }
         .user__img{
             max-width: 80px;
             height: auto;
             margin-bottom: 2rem;
         }
-        
         h5{
             opacity: .8;
-            font-size: 1.1rem;
-            // padding-bottom: .5rem;
+            font-size: 1rem;
+            padding-bottom: .5rem;
         }
         ul{
             li a, .logout{
@@ -201,10 +211,7 @@ export default {
         background: #F4F6F9;
         // padding: 3rem 2.5rem;
         .right__wrapper{
-              padding: 1rem 2rem;
-        }
-        h4{
-           font-weight: 400;
+              padding: 2rem 2rem;
         }
        small{
             color:#627081;
@@ -217,91 +224,16 @@ export default {
            padding: 1.2rem 2rem;
            display: flex;
            justify-content: space-between;
+          h6{
+               font-size: .9rem;
+               color: #fff;
+          }
        }
-        .summary__wrapper{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 30px;
-            margin-top: 1rem;
-            .summary__card{
-                display: flex;
-                padding: 1rem 1rem;
-                border-radius: 4px;
-                // font-size: .9rem;
-                color:#fff !important;
-                margin-bottom: 2rem;
-                p{
-                    color:#fff !important;
-                    padding-top: 0rem;
-                    opacity: .9;
-                    font-size: .7rem;
-                    line-height: 1.4rem;
-
-                }
-                h5{
-                    color:#fff;
-                    font-size: 1rem;
-                }
-            }
-            .one{
-                    background: #00C292;
-                }
-                .two{
-                    background: #757afc;
-                }
-                .three{
-                    background: #EF5350;
-                }
-                .four{
-                    background: #251F68;
-                   
-                }
-                
+        .note{
+            color: #627081 !important;
+            font-size: .8rem;
+            line-height: 1.7;
         }
-         p{
-                        color: red;
-                    }
-            //REQUEST FORM
-            form{
-                 box-shadow: 0px 6px 60px -7px rgba(69,77,89,0.15);
-                 padding: 2rem;
-                 margin: 2rem 0;
-                 h4{
-                     font-weight: bold;
-                     font-size: 1rem;
-                     color:#454545;
-                 }
-                 small{
-                     color:#545454;
-                     font-weight: bold;
-                     opacity: .7;
-                     font-size: .8rem;
-                 }
-                 label{
-                     font-size: .8rem;
-                     font-weight: bold;
-                     color:#545454;
-                     opacity: .7;
-                 }
-                 input, select{
-                     height: 2.8rem;
-                     box-shadow: none;
-                     border-radius: 0px;
-                     font-size: .9rem;
-                 }
-                 .request__btn{
-                     background: #251F68;
-                     color:#fff;
-                     margin-top: 1.5rem;
-                     border-radius: 3px;
-                     padding: 1rem 3rem;
-                     border: none;
-                     font-size: .9rem;
-                 }
-                 .alert{
-                     font-size: .9rem;
-                 }
-            }
         .invest__img{
             max-height: 50vh;
             width: 100vw;
@@ -311,6 +243,17 @@ export default {
             font-weight: bold;
             padding-bottom: 1.2rem;
             padding-top: 1rem;
+        }
+        .red{
+            background: rgb(161, 39, 39);
+            color: #fff;
+            padding: 1rem .5rem;
+            border-radius: 3px;
+            font-size: .85rem;
+            opacity: .9;
+             a{
+                color:#fff !important;
+            }
         }
         p{
             padding-top:1rem;
