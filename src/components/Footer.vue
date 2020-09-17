@@ -14,7 +14,7 @@
                  <h6>Email Address</h6>
                 <p>financeinvestment@gmail.com</p>
                  <h6>Phone</h6>
-                <p><a href="tel:08137344056">08137344056</a></p>
+                <p><a href="tel:+2347037104283">+2347037104283</a></p>
               </div>
               <div class="col-md-4">
                   <h5>Payment Method</h5>
